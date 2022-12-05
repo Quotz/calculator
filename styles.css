@@ -1,0 +1,52 @@
+
+
+#container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	height: 400px;
+	width: 400px;
+	background-color: black;
+	border-style: solid;
+	border-width: 5px;
+}
+
+#display {
+	grid-column: 1 / span 3;
+	background-color: lightgrey;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	font-family: monospace;
+	font-size: 60px!important;
+}
+
+#zeroButton {
+	grid-column: 1 / span 2;
+}
+
+.button {
+	margin: 2px;
+    border-radius: 5%;
+    border: none;
+    font-family: monospace;
+	font-size: 16px!important;
+	font-weight: bold;
+}
+
+.button:active {
+	opacity: 0.6;
+
+}
+
+.operand {
+	background-color: lightyellow;
+
+}
+
+.operator {
+	background-color: skyblue;
+}
